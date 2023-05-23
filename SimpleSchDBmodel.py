@@ -1,5 +1,11 @@
 from django.db import models
 
+
+GENDER_CHOICES = (
+("Male", "Male"),
+("Female", "Female")
+)
+
 class School(models.Model):
     name = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
@@ -12,6 +18,7 @@ class School(models.Model):
 class Student(models.Model):
     name = models.CharField(max_length=255)
     school = models.ForeignKey(School, on_delete=models.CASCADE)
+    gender = models.CharField(choices=GENDER_CHOICES, max_length=10)
     # Other fields related to the student
 
     def __str__(self):
@@ -21,6 +28,7 @@ class Student(models.Model):
 class Teacher(models.Model):
     name = models.CharField(max_length=255)
     school = models.ForeignKey(School, on_delete=models.CASCADE)
+    gender = models.CharField(choices=GENDER_CHOICES, max_length=10)
     # Other fields related to the teacher
 
     def __str__(self):
