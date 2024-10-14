@@ -1,4 +1,4 @@
-In this example, we have several models representing different entities within a school database:
+We have several models representing different entities within a school database:
 
 School: Represents a school with fields such as name and address.
 
