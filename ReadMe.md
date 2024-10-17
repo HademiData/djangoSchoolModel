@@ -80,3 +80,6 @@ Adding additional fields (e.g., contact information, grades, subjects).
 Implementing custom validation rules and business logic.
 Defining additional relationships (e.g., many-to-many relationships for extracurricular activities).
 Extending the admin interface with custom actions and field configurations.
+
+## License
+Anyone can use this code for free..
