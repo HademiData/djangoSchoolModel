@@ -1,4 +1,4 @@
-# School Management System - Django Models Overview
+### School Management System - Django Models Overview
 
 This project provides a basic implementation of a school management system using Django's ORM capabilities. The models represent various entities such as schools, students, teachers, courses, and enrollments, with relationships implemented through foreign keys.
 
